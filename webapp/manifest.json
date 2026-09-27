@@ -1,0 +1,20 @@
+{
+  "name": "Japan's Notebook",
+  "short_name": "JapanNotebook",
+  "description": "Cultura y filosofía japonesa en 60 segundos — kaizen, wabi-sabi, omotenashi y más.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#17181A",
+  "theme_color": "#17181A",
+  "lang": "es",
+  "icons": [
+    { "src": "assets/icons/favicon-16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "assets/icons/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "assets/icons/logo-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/logo-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/logo-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/logo-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
