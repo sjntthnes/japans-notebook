@@ -1,9 +1,11 @@
 # Japan's Notebook — Landing page
 
 Aplicación web estática (HTML/CSS/JS puro, sin build ni frameworks) que sirve de landing page
-central del proyecto: showcase de los 12 videos, enlaces a las 3 redes, captura de lista de
+central del proyecto: showcase de los 24 videos, enlaces a las 3 redes, captura de lista de
 espera para la futura tienda/viajes, chatbot de WhatsApp y espacio para publicidad. Funciona
 también como **PWA** (instalable, con caché offline del shell de la página).
+
+Publicada en GitHub Pages: **https://sjntthnes.github.io/japans-notebook/**
 
 ## Estructura
 
@@ -56,9 +58,9 @@ Cosas que dejé preparadas pero que necesitan un dato tuyo antes de salir a prod
 - [ ] **Número de WhatsApp** — en `js/chatbot.js`, constante `WHATSAPP_NUMBER` (está vacía a
       propósito: mientras no la definas, el botón cae de forma honesta a "escribir por
       correo" en vez de mostrar un enlace roto).
-- [ ] **Dominio real** — en `index.html`, la etiqueta `<link rel="canonical">` usa
-      `japansnotebook.example.com` como placeholder. Reemplázalo por tu dominio real (mejora
-      SEO y el preview al compartir el link).
+- [x] **Dominio real** — publicado en GitHub Pages (`https://sjntthnes.github.io/japans-notebook/`),
+      `canonical` y `og:url`/`og:image` ya apuntan ahí. Si más adelante se compra un dominio propio,
+      actualizar estas 3 etiquetas en `index.html` y configurar el dominio custom en GitHub Pages.
 - [ ] **Google AdSense** — hay 2 contenedores `.ad-slot` ya ubicados en el HTML (uno tras el
       hero, otro antes de "Próximamente"). Están en `display:none` hasta que tengan contenido
       real — así nunca se ve una caja vacía. Para activarlos: pega tu script de AdSense en
