@@ -425,6 +425,24 @@ p{ margin:0; }
 
 .leccion-card.locked{ opacity:.5; pointer-events:none; }
 
+.descargables{ margin-top: 44px; }
+.descargables-kicker{
+  font-family: var(--font-label); font-size: 11px; letter-spacing:.08em; text-transform:uppercase;
+  color: var(--text-dim); margin-bottom: 16px;
+}
+.descargables-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap:20px; }
+.descargable-card{
+  display:flex; align-items:flex-start; gap:16px; background: linear-gradient(160deg, var(--surface), var(--surface-2));
+  border:1px solid var(--line); border-radius: var(--radius); padding: 24px; transition: transform .2s, border-color .2s;
+}
+.descargable-card:hover{ transform: translateY(-4px); border-color: var(--gold); }
+.descargable-icon{ font-size: 30px; line-height:1; }
+.descargable-card h3{ font-size: 15.5px; margin-bottom: 6px; }
+.descargable-card p{ color: var(--text-dim); font-size:13px; line-height:1.5; margin-bottom:10px; }
+.descargable-go{ font-size:12.5px; font-weight:700; color: var(--gold); }
+
+@media (max-width: 760px){ .descargables-grid{ grid-template-columns: 1fr; } }
+
 @media (max-width: 980px){ .leccion-grid{ grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 620px){ .leccion-grid{ grid-template-columns: 1fr; } .leccion-teaser{ flex-direction:column; text-align:center; } }
 
