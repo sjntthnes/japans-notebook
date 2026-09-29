@@ -2,13 +2,15 @@
 // Estrategia: app-shell precacheado + cache-first para estáticos del mismo origen,
 // network-first para la navegación (HTML), con fallback a caché si no hay red.
 
-const CACHE_VERSION = "jn-v1";
+const CACHE_VERSION = "jn-v2";
 const PRECACHE = [
   "./",
   "./index.html",
+  "./curso-de-japones.html",
   "./css/styles.css",
   "./js/main.js",
   "./js/chatbot.js",
+  "./js/curso.js",
   "./manifest.json",
   "./assets/img/branding/logo.png",
   "./assets/img/branding/hero-banner.jpg",
